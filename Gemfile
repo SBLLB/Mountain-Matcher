@@ -30,6 +30,7 @@ gem 'rspec-rails'
 gem 'capybara'
 
 gem 'jquery-tablesorter'
+gem 'world-flags', '~> 0.6.5'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

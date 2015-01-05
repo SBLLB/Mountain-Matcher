@@ -11,7 +11,7 @@ Resort.delete_all
 
 CSV.foreach("Resorts1.csv") do |col|
   Resort.create(
-  	:resort => col[0],
+  	:resort_name => col[0],
   	:country => col[1],
   	:nearest_airport => col[2],
   	:transfer_time => col[3],

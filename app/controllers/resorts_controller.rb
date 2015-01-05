@@ -1,6 +1,5 @@
 class ResortsController < ApplicationController
 	def show
-	end
-	def new
+		@resort = Resort.find(params[:id])
 	end
 end
