@@ -11,9 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150104173751) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "resorts", force: true do |t|
+    t.string   "resort"
+    t.string   "country"
+    t.string   "nearest_airport"
+    t.integer  "transfer_time"
+    t.integer  "size_of_ski_domain"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

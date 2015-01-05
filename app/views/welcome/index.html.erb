@@ -9,27 +9,15 @@
     </tr> 
   </thead> 
   <tbody> 
-    <tr> 
-        <td>Chamonix</td> 
-        <td>France</td> 
-        <td>Geneva</td> 
-        <td>1hr 10min</td> 
-        <td>56km</td> 
-    </tr> 
-    <tr> 
-        <td>Morzine</td> 
-        <td>France</td> 
-        <td>Geneva</td> 
-        <td>1hr 15min</td> 
-        <td>650km</td> 
-    </tr> 
-    <tr> 
-        <td>Avoriaz</td> 
-        <td>France</td> 
-        <td>Geneva</td> 
-        <td>1hr 35min</td> 
-        <td>650km</td> 
-    </tr> 
+    <% @data.each do |data| %>
+      <tr> 
+          <td><%= data.resort %></td> 
+          <td><%= data.country %></td> 
+          <td><%= data.nearest_airport %></td> 
+          <td><%= data.transfer_time %></td> 
+          <td><%= data.size_of_ski_domain %></td> 
+      </tr> 
+    <% end %>
   </tbody> 
 </table> 
 
