@@ -1,8 +1,18 @@
 
+
   #resortTable{
 		width:100%; 
+		margin: 0 auto;
+		font-size: 1.2em;
+ 		margin-bottom: 15px;
 		border-collapse:collapse; 
 	}
+
+  #resortTable thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+  
 	#resortTable td{ 
 		padding:7px; border:#4e95f4 1px solid;
 	}
