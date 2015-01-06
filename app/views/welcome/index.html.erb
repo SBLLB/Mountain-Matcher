@@ -1,7 +1,7 @@
-<table id="resortTable" class="tablesorter"> 
+<table id="resortTable" class="tablesorter" cellspacing="1"> 
   <thead> 
     <tr> 
-        <th>Resort</th> 
+        <th>Resort<span></span></th>
         <th>Country</th> 
         <th>Nearest Airport</th> 
         <th>Transfer Time</th> 
@@ -15,7 +15,7 @@
           <td><%= data.country %></td> 
           <td><%= data.nearest_airport %></td> 
           <td><%= data.transfer_time %></td> 
-          <td><%= data.size_of_ski_domain %></td> 
+          <td><%= data.size_of_ski_domain %> km</td> 
       </tr> 
     <% end %>
   </tbody> 
@@ -23,6 +23,8 @@
 
 <script type="text/javascript">
   $(document).ready(function() { 
-    $("#resortTable").tablesorter(); 
+    $("#resortTable").tablesorter({
+      cssAsc: "headerSortUp", cssDesc: "headerSortDown" 
+    }); 
   }); 
 </script>

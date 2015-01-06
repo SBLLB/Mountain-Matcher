@@ -1,26 +1,42 @@
+/* ============
+    GLOBAL 
+=============*/
+
+a:link{color: rgb(0,0,0); text-decoration: none;}
+a:visited{color: rgb(0,0,0); text-decoration: none;}
+/*a:hover{color: rgb(0,0,0); text-decoration: none;}*/
+a:active{color: rgb(0,0,0); text-decoration: none;}
+
+/* ============
+    TABLE  
+=============*/
 
 
-  #resortTable{
-		width:100%; 
-		margin: 0 auto;
-		font-size: 1.2em;
- 		margin-bottom: 15px;
-		border-collapse:collapse; 
-	}
-
-  #resortTable thead {
-  cursor: pointer;
-  background: #c9dff0;
+#resortTable{
+	width:100%; 
+	margin: 0 auto;
+	font-size: 1.2em;
+	margin-bottom: 15px;
+	border-collapse:collapse; 
 }
-  
-	#resortTable td{ 
-		padding:7px; border:#4e95f4 1px solid;
-	}
-	
-	#resortTable tr{
-		background: #b8d1f3;
-	}
 
-  #resortTable tr:hover {
-    background-color: #ffff99;
-  }
+#resortTable td{ 
+	padding:7px; 
+  border:#4e95f4 1px solid;
+}
+
+#resortTable thead tr th { 
+  font-weight: bold;
+  /*padding: 12px 30px;*/
+  /*padding-left: 42px;*/
+}
+
+#resortTable tbody tr:hover {
+  background-color: #ffff99;
+}
+
+#resortTable thead tr th.headerSortUp {
+  background-color: #D02846;
+}
+
+
