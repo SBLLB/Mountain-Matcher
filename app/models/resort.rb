@@ -1,5 +1,4 @@
 class Resort < ActiveRecord::Base
-  def to_param
-    "#{id} #{resort_name}".parameterize
-  end
+  extend FriendlyId
+  friendly_id :resort_name
 end

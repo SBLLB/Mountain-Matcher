@@ -21,14 +21,14 @@ context 'viewing resorts' do
    visit '/'
    click_link 'Courmayer'
    expect(page).to have_content 'Courmayer'
-   expect(current_path).to eq "/resorts/1-courmayer"
+   expect(current_path).to eq "/resorts/Courmayer"
   end
 
   scenario 'the resort name displays in the URL of a resorts page' do
    visit '/'
    click_link 'Courmayer'
    expect(page).to have_content 'Courmayer'
-   expect(current_path).to eq "/resorts/1-courmayer"
+   expect(current_path).to eq "/resorts/Courmayer"
   end
 
 end

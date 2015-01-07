@@ -1,5 +1,5 @@
 class ResortsController < ApplicationController
 	def show
-		@resort = Resort.find(params[:id])
+		@resort = Resort.friendly.find(params[:id])
 	end
 end
