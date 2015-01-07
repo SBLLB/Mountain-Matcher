@@ -18,17 +18,25 @@ context 'viewing resorts' do
   end
 
   scenario 'lets a user view resort details' do
-   visit '/'
-   click_link 'Courmayer'
-   expect(page).to have_content 'Courmayer'
-   expect(current_path).to eq "/resorts/Courmayer"
+    visit '/'
+    click_link 'Courmayer'
+    expect(page).to have_content 'Courmayer'
+    expect(current_path).to eq "/resorts/courmayer"
   end
 
   scenario 'the resort name displays in the URL of a resorts page' do
-   visit '/'
-   click_link 'Courmayer'
-   expect(page).to have_content 'Courmayer'
-   expect(current_path).to eq "/resorts/Courmayer"
+    visit '/'
+    click_link 'Courmayer'
+    expect(page).to have_content 'Courmayer'
+    expect(current_path).to eq "/resorts/courmayer"
+  end
+
+  scenario 'the resort name displays in the URL of a resorts page' do
+    Resort.create(resort_name: "Sauze d'Oulx", country: 'Italy', nearest_airport: 'Turin', transfer_time: '3hr', size_of_ski_domain: '51', id: 2 )
+    visit '/'
+    click_link "Sauze d'Oulx"
+    expect(page).to have_content "Sauze d'Oulx" 
+    expect(current_path).to eq "/resorts/sauze-d-oulx"
   end
 
 end
