@@ -20,9 +20,12 @@ a:visited{color: rgb(0,0,0); text-decoration: none;}
 
 #resortTable thead tr th { 
   font-weight: bold;
+  /*color: white;*/
   padding: 15px 20px 15px 20px;
-  border: 0 0 0 0;
   text-align: left;
+}
+#resortTable thead tr {
+  background-color: #C1C1C1;
 }
 
 #resortTable td{ 
@@ -42,9 +45,18 @@ a:visited{color: rgb(0,0,0); text-decoration: none;}
   background: url(http://tablesorter.com/themes/blue/desc.gif) no-repeat 99%;
 }
 
-#resortTable tbody tr:hover {
-  background-color: #ffff99;
+#resortTable tbody tr:nth-child(even) {
+    background-color: #F9F9F9;
 }
+
+#resortTable tbody tr:hover {
+  background-color: rgba(253, 84, 97, .1);
+  border-left: #FD5461 4px solid;
+}
+
+
+
+
 
 
 
