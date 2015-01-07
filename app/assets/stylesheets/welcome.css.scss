@@ -44,9 +44,11 @@ a:visited{color: rgb(0,0,0); text-decoration: none;}
 #resortTable .headerSortDown {
   background: url(http://tablesorter.com/themes/blue/desc.gif) no-repeat 99%;
 }
-
+#resortTable tbody tr {
+  border-left: 4px transparent solid;
+}
 #resortTable tbody tr:nth-child(even) {
-    background-color: #F9F9F9;
+  background-color: #F9F9F9;
 }
 
 #resortTable tbody tr:hover {
