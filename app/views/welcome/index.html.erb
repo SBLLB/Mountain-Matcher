@@ -1,7 +1,7 @@
 <table id="resortTable" class="tablesorter" cellspacing="1"> 
   <thead> 
     <tr> 
-        <th>Resort<span></span></th>
+        <th>Resort</th>
         <th>Country</th> 
         <th>Nearest Airport</th> 
         <th>Transfer Time</th> 
@@ -11,11 +11,11 @@
   <tbody> 
     <% @data.each do |data| %>
       <tr> 
-          <td><%= link_to data.resort_name, resort_path(data) %></td> 
-          <td><%= data.country %></td> 
-          <td><%= data.nearest_airport %></td> 
-          <td><%= data.transfer_time %></td> 
-          <td><%= data.size_of_ski_domain %> km</td> 
+        <td><%= link_to data.resort_name, resort_path(data) %></td> 
+        <td><%= data.country %></td> 
+        <td><%= data.transfer_time %></td> 
+        <td><%= data.nearest_airport %></td> 
+        <td><%= data.size_of_ski_domain %> km</td> 
       </tr> 
     <% end %>
   </tbody> 

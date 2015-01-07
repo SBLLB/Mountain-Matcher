@@ -5,38 +5,48 @@
 a:link{color: rgb(0,0,0); text-decoration: none;}
 a:visited{color: rgb(0,0,0); text-decoration: none;}
 /*a:hover{color: rgb(0,0,0); text-decoration: none;}*/
-a:active{color: rgb(0,0,0); text-decoration: none;}
+/*a:active{color: rgb(0,0,0); text-decoration: none;}*/
 
 /* ============
     TABLE  
 =============*/
 
-
 #resortTable{
-	width:100%; 
+	width:80%; 
 	margin: 0 auto;
 	font-size: 1.2em;
-	margin-bottom: 15px;
-	border-collapse:collapse; 
-}
-
-#resortTable td{ 
-	padding:7px; 
-  border:#4e95f4 1px solid;
+	border-collapse: collapse; 
 }
 
 #resortTable thead tr th { 
   font-weight: bold;
-  /*padding: 12px 30px;*/
-  /*padding-left: 42px;*/
+  padding: 15px 20px 15px 20px;
+  border: 0 0 0 0;
+  text-align: left;
+}
+
+#resortTable td{ 
+	padding: 10px 0px 10px 20px;
+  border-top: #EAEAEA 1px solid;
+}
+
+#resortTable .tablesorter-headerUnSorted  {
+  background: url(http://tablesorter.com/themes/blue/bg.gif) no-repeat 99%;
+}
+
+#resortTable .headerSortUp {
+  background: url(http://tablesorter.com/themes/blue/asc.gif) no-repeat 99%;
+}
+
+#resortTable .headerSortDown {
+  background: url(http://tablesorter.com/themes/blue/desc.gif) no-repeat 99%;
 }
 
 #resortTable tbody tr:hover {
   background-color: #ffff99;
 }
 
-#resortTable thead tr th.headerSortUp {
-  background-color: #D02846;
-}
+
+
 
 
