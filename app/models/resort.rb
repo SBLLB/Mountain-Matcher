@@ -1,4 +1,6 @@
 class Resort < ActiveRecord::Base
-  extend FriendlyId
-  friendly_id :resort_name, use: :slugged
+	include PgSearch
+  pg_search_scope :search_by_nearest_airport, :against => :nearest_airport
+	extend FriendlyId
+	friendly_id :resort_name, use: :slugged
 end

@@ -2,58 +2,137 @@
     GLOBAL 
 =============*/
 
-a:link{color: rgb(0,0,0); text-decoration: none;}
-a:visited{color: rgb(0,0,0); text-decoration: none;}
-/*a:hover{color: rgb(0,0,0); text-decoration: none;}*/
-/*a:active{color: rgb(0,0,0); text-decoration: none;}*/
-
-/* ============
-    TABLE  
-=============*/
-
-#resortTable{
-	width:80%; 
-	margin: 0 auto;
-	font-size: 1.2em;
-	border-collapse: collapse; 
+a:link {
+  color: rgb(0,0,0); 
+  /*text-decoration: none;*/
+}
+a:visited {
+  color: rgb(0,0,0);
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+ol, ul {
+  list-style: none; 
 }
 
+/* ==================
+    HEADER
+====================*/
+
+img#logo{
+  display: block;
+  margin: 0 auto;
+}
+
+/* ==================
+    LINE DIVIDER
+====================*/
+
+section.fancy-line { 
+    border: 0; 
+    height: 2px;
+    margin: 1em 0 1em 0;
+}
+section.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+section.fancy-line:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+section.fancy-line:before, section.fancy-line:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+section.fancy-line, section.fancy-line:before {
+    background: radial-gradient(ellipse at center, rgba(58, 55, 55,.8) 0%, rgba(58, 55, 55, 0) 75%);
+}
+
+/* ==================
+      NAV BAR
+====================*/
+
+.navigation-bar ul {
+  text-align: center; 
+  font-family: "Raleway";
+  font-weight: 500;
+}
+.navigation-bar ul li {
+  display: inline;
+  padding: 3px 20px 3px 20px; 
+}
+.navigation-bar li~li { 
+  border-left: 1px solid #000000 
+}
+.navigation-bar a {
+  text-decoration: none;
+  color: #FD5461;
+}
+
+/* ==================
+    SEARCH SECTION
+====================*/
+
+img#jumbotron{
+  width: 80%;
+  display: block;
+  margin: 1.5em auto 2.5em auto;
+}
+
+/* ==================
+    TABLE SECTION
+====================*/
+
+.table-section h3 {
+  font-size: 2em;
+  margin-left: 4.5em;
+}
+#resortTable{
+	width:80%; 
+	margin: 0px auto 5em auto;
+  font-family:'Raleway';
+	border-collapse: collapse; 
+}
 #resortTable thead tr th { 
   font-weight: bold;
-  /*color: white;*/
+  font-size: 1.2em;
   padding: 15px 20px 15px 20px;
   text-align: left;
 }
 #resortTable thead tr {
   background-color: #C1C1C1;
 }
-
 #resortTable td{ 
 	padding: 10px 0px 10px 20px;
+  /*font-size: 1em;*/
   border-top: #EAEAEA 1px solid;
 }
-
 #resortTable .tablesorter-headerUnSorted  {
   background: url(http://tablesorter.com/themes/blue/bg.gif) no-repeat 99%;
 }
-
 #resortTable .headerSortUp {
   background: url(http://tablesorter.com/themes/blue/asc.gif) no-repeat 99%;
 }
-
 #resortTable .headerSortDown {
   background: url(http://tablesorter.com/themes/blue/desc.gif) no-repeat 99%;
 }
 #resortTable tbody tr {
+  font-size: 1.1em;
   border-left: 4px transparent solid;
 }
 #resortTable tbody tr:nth-child(even) {
   background-color: #F9F9F9;
 }
-
 #resortTable tbody tr:hover {
   background-color: rgba(253, 84, 97, .1);
   border-left: #FD5461 4px solid;
+  cursor: pointer;
 }
 
 

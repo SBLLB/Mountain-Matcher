@@ -67,6 +67,10 @@ GEM
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     pg (0.17.1)
+    pg_search (0.7.8)
+      activerecord (>= 3.1)
+      activesupport (>= 3.1)
+      arel
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -147,6 +151,7 @@ DEPENDENCIES
   jquery-rails
   jquery-tablesorter
   pg
+  pg_search
   rails (= 4.1.7)
   rspec-rails
   sass-rails (~> 4.0.3)
