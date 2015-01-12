@@ -34,6 +34,11 @@
           <th>Nearest Airport</th> 
           <th>Transfer Time</th> 
           <th>Size of Ski Domain</th> 
+          <th>% Easy</th> 
+          <th>% Medium</th> 
+          <th>% Hard</th> 
+          <th>Apres Ski</th> 
+          <th>Cost of Skipass</th> 
       </tr> 
     </thead> 
     <tbody> 
@@ -41,9 +46,14 @@
         <tr> 
           <td><%= link_to data.resort_name, resort_path(data) %></td> 
           <td><%= data.country %></td> 
-          <td><%= data.transfer_time %></td> 
           <td><%= data.nearest_airport %></td> 
+          <td><%= data.transfer_time %></td> 
           <td><%= data.size_of_ski_domain %> km</td> 
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr> 
       <% end %>
     </tbody> 
