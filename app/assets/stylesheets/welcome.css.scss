@@ -91,7 +91,11 @@ img#jumbotron{
 
 .table-section h3 {
   font-size: 2em;
-  margin-left: 4.5em;
+  margin-left: 145px;
+}
+.table-section h4 {
+  font-size: 1em;
+  margin-left: 145px;
 }
 #resortTable{
 	width:80%; 
@@ -101,16 +105,26 @@ img#jumbotron{
 }
 #resortTable thead tr th { 
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.05em;
   padding: 15px 20px 15px 20px;
   text-align: left;
+}
+#resortTable thead tr th {
+  border-left: 1px solid #818185;
+  border-right: 1px solid #818185;
+}
+#resortTable thead tr th:first-child  {
+  border-left: 0;
+}
+#resortTable thead tr th:last-child  {
+  border-right: 0;
 }
 #resortTable thead tr {
   background-color: #C1C1C1;
 }
 #resortTable td{ 
 	padding: 10px 0px 10px 20px;
-  /*font-size: 1em;*/
+  text-align: center;
   border-top: #EAEAEA 1px solid;
 }
 #resortTable .tablesorter-headerUnSorted  {
@@ -123,7 +137,7 @@ img#jumbotron{
   background: url(http://tablesorter.com/themes/blue/desc.gif) no-repeat 99%;
 }
 #resortTable tbody tr {
-  font-size: 1.1em;
+  font-size: 1em;
   border-left: 4px transparent solid;
 }
 #resortTable tbody tr:nth-child(even) {
