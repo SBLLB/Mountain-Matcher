@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150113140011) do
+ActiveRecord::Schema.define(version: 20150113170312) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,11 @@ ActiveRecord::Schema.define(version: 20150113140011) do
     t.integer  "easy_runs_km"
     t.integer  "medium_runs_km"
     t.integer  "hard_runs_km"
+    t.string   "off_piste_rating"
+    t.decimal  "cost_of_pass"
+    t.string   "beginner_rating"
+    t.integer  "apres_ski_rating"
+    t.integer  "altitude"
   end
 
   add_index "resorts", ["slug"], name: "index_resorts_on_slug", using: :btree

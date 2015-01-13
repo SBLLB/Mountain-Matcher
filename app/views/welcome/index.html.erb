@@ -12,16 +12,6 @@
     </ul>
   </nav>
 </section>
-<section class="search-image">
-  <img id="jumbotron" src="MountainJumbotron2.jpg" alt="Mountain Backdrop">
-  
-  <%= form_tag search_path, method: :get do %>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search" %>
-  <% end %>
-
-</section>
-<%= debug @resort_search %>
 
 <section class="fancy-line"> </section>
 <section class="table-section">
@@ -34,8 +24,11 @@
           <th>Nearest Airport</th> 
           <th>Transfer Time</th> 
           <th>Size of Ski Domain</th> 
-          <th>Easy Km</th> 
-          <th>Medium Km</th> 
+          <th>Beginner Friendly</th> 
+          <th>Apres Ski</th>
+          <th>Off Piste</th> 
+          <th>Cost of Day Pass</th>
+          <th>Altitude</th> 
       </tr> 
     </thead> 
     <tbody> 
@@ -52,8 +45,11 @@
               <section class="hard-runs" style="width: <%=resort.proportion_hard_runs.to_i %>%"></section>
             </section>
           </td>
-          <td><%= resort.easy_runs_km %>km</td>
-          <td><%= resort.medium_runs_km %>km</td>
+          <td><%= resort.beginner_rating %>/5</td>
+          <td><%= resort.apres_ski_rating %>/5</td>
+          <td><%= resort.off_piste_rating %></td>
+          <td><%= resort.cost_of_pass%>€</td>
+          <td><%= resort.altitude %>km</td>
         </tr> 
       <% end %>
     </tbody> 

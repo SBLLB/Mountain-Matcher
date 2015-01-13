@@ -9,7 +9,7 @@ require 'csv'
 
 Resort.delete_all
 
-CSV.foreach("Resorts1.csv") do |col|
+CSV.foreach("Resorts3.csv") do |col|
   Resort.create(
   	:resort_name => col[0],
   	:country => col[1],
@@ -18,6 +18,11 @@ CSV.foreach("Resorts1.csv") do |col|
   	:size_of_ski_domain => col[4],
   	:easy_runs_km => col[5],
   	:medium_runs_km => col[6],
-  	:hard_runs_km => col[7]
+  	:hard_runs_km => col[7],
+    :off_piste_rating => col[8],
+    :cost_of_pass => col[9],
+    :beginner_rating => col[10],
+    :apres_ski_rating => col[11],
+    :altitude => col[12]
   	)
 end
