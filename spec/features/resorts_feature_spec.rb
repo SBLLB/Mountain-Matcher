@@ -31,7 +31,7 @@ context 'viewing resorts' do
     expect(current_path).to eq "/resorts/courmayer"
   end
 
-  scenario 'the resort name displays in the URL of a resorts page' do
+  scenario 'the resort name displays without spaces in the URL of a resorts page' do
     Resort.create(resort_name: "Sauze d'Oulx", country: 'Italy', nearest_airport: 'Turin', transfer_time: '3hr', size_of_ski_domain: '51', id: 2 )
     visit '/'
     click_link "Sauze d'Oulx"

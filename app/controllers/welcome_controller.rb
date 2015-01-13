@@ -1,8 +1,7 @@
 class WelcomeController < ApplicationController
 	def index
-    @data = Resort.all
-    @resorts = Resort.search_by_nearest_airport(params[:search])
-    # Resort.search_by_nearest_airport("turin")
+    @resorts = Resort.all
+ 		@resort_search = Resort.search_by_nearest_airport(params[:search])
   end 
 
   def search

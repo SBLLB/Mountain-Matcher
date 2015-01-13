@@ -15,6 +15,9 @@ CSV.foreach("Resorts1.csv") do |col|
   	:country => col[1],
   	:nearest_airport => col[2],
   	:transfer_time => col[3],
-  	:size_of_ski_domain => col[4]
+  	:size_of_ski_domain => col[4],
+  	:easy_runs_km => col[5],
+  	:medium_runs_km => col[6],
+  	:hard_runs_km => col[7]
   	)
 end

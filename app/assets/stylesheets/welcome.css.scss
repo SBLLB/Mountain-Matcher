@@ -134,9 +134,31 @@ img#jumbotron{
   border-left: #FD5461 4px solid;
   cursor: pointer;
 }
-
-
-
+.slope-difficulty-gauge { 
+  height: .2em;  
+  position: relative;
+    background: #555;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  padding: 10px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+  -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+  box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.slope-difficulty-gauge > section {
+  float: left;
+  height: 100%;
+}
+section.easy-runs {
+  background-color: green;
+}
+section.medium-runs {
+  background-color: orange;
+}
+section.hard-runs {
+  background-color: red;
+}
 
 
 
