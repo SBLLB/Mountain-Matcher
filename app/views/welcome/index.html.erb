@@ -40,10 +40,12 @@
           <td><%= resort.nearest_airport %></td> 
           <td><%= resort.transfer_time %></td> 
           <td><%= resort.size_of_ski_domain %> km<br>
-            <section class='slope-difficulty-gauge'>
-              <section class="easy-runs" id="<%= resort.proportion_easy_runs.to_i %>-percent-easy-runs" style="width: <%= number_to_percentage(resort.proportion_easy_runs, precision: 0) %>"></section>
-              <section class="medium-runs" style="width: <%= number_to_percentage(resort.proportion_medium_runs, precision: 0) %>"></section>
-            </section>
+            <a href="#" data-tool="<%= resort.resort_name %> pistes: <%= resort.easy_runs_km %>km Easy / <%= resort.medium_runs_km %>km Medium / <%= resort.hard_runs_km %>km Hard" class="tooltip">
+              <section class='slope-difficulty-gauge'>
+                <section class="easy-runs" id="<%= resort.proportion_easy_runs.to_i %>-percent-easy-runs" style="width: <%= number_to_percentage(resort.proportion_easy_runs, precision: 0) %>"></section>
+                <section class="medium-runs" style="width: <%= number_to_percentage(resort.proportion_medium_runs, precision: 0) %>"></section>
+              </section>
+            </a>
           </td>
           <td><%= resort.beginner_rating %>/5</td>
           <td><%= resort.apres_ski_rating %>/5</td>
