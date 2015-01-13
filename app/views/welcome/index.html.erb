@@ -59,7 +59,15 @@
 <script type="text/javascript">
   $(document).ready(function() { 
     $("#resortTable").tablesorter({
-      cssAsc: "headerSortUp", cssDesc: "headerSortDown", sortReset: true
+      cssAsc: "headerSortUp", 
+      cssDesc: "headerSortDown", 
+      sortReset: true,
+      sortInitialOrder: "asc",
+      headers: {
+        5: { sortInitialOrder: 'desc' },
+        6: { sortInitialOrder: 'desc' },
+        9: { sortInitialOrder: 'desc' }
+      }
     }); 
   }); 
 </script>
