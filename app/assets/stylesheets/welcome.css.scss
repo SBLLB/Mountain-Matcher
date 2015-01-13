@@ -137,12 +137,13 @@ img#jumbotron{
 .slope-difficulty-gauge { 
   height: 1em;  
   position: relative;
-    background: #555;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  padding: 4px;
-  margin: .5em 0 0 0;
+    background: #FD5461;
+  border: 1px solid #C1C1C1;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0px;
+  margin: .3em 0 0 0;
   -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
   -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
   box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
@@ -153,12 +154,18 @@ img#jumbotron{
 }
 section.easy-runs {
   background-color: #2BDE73;
+  -moz-border-radius: 20px 0 0 20px ;
+  -webkit-border-radius: 20px 0 0 20px;
+  border-radius: 20px 0 0 20px;
 }
 section.medium-runs {
   background-color: #F7AF3E;
 }
 section.hard-runs {
   background-color: #FD5461;
+  -moz-border-radius: 0 20px 20px 0 ;
+  -webkit-border-radius: 0 20px 20px 0 ;
+  border-radius: 0 20px 20px 0 ;
 }
 
 
