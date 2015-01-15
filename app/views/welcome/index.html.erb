@@ -49,15 +49,16 @@
           </td>
           <td><%= resort.beginner_rating %>/5</td>
           <td>
+            <div id="for-sort-hidden"><%= resort.apres_ski_rating %></div>
             <% if resort.apres_ski_rating == 5 %>
-              <i class="icon-beer"> </i>
-              <i class="icon-beer"> </i>
-              <i class="icon-beer"> </i>
+              <i id="good-rating" class="icon-beer"> </i>
+              <i id="good-rating" class="icon-beer"> </i>
+              <i id="good-rating" class="icon-beer"> </i>
             <% elsif resort.apres_ski_rating == 4 %>
-              <i class="icon-beer"> </i>
-              <i class="icon-beer"> </i>
+              <i id="mid-rating" class="icon-beer"> </i>
+              <i id="mid-rating" class="icon-beer"> </i>
             <% else %>
-              <i class="icon-beer"> </i>
+              <i id="bad-rating"class="icon-beer"> </i>
             <% end %>
           </td>
           <td><%= resort.off_piste_rating %></td>

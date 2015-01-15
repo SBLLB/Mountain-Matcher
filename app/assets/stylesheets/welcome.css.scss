@@ -151,7 +151,7 @@ img#jumbotron{
 .slope-difficulty-gauge { 
   height: 1em;  
   position: relative;
-    background: #FD5461;
+  background: #FD5461;
   border: 1px solid #C1C1C1;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -220,10 +220,28 @@ a.tooltip:before {
   border-width: 6px 6px 0 6px;
   border-color: rgba(0,0,0,0.85) transparent transparent transparent;
 }
-a.tooltip:hover:after{ visibility: visible; opacity: 1; bottom: 30px; }
-a.tooltip:hover:before{ visibility: visible; opacity: 1; bottom: 14px; }
-
-
+a.tooltip:hover:after{ 
+  visibility: visible; 
+  opacity: 1; 
+  bottom: 30px; 
+}
+a.tooltip:hover:before{ 
+  visibility: visible; 
+  opacity: 1; 
+  bottom: 14px; 
+}
+i#good-rating{
+  color: #2BDE73;
+}
+i#mid-rating{
+  color: #F7AF3E;
+}
+i#bad-rating{
+  color: #FD5461;
+}
+div#for-sort-hidden{
+  visibility: hidden;
+}
 
 
 
