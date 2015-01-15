@@ -48,7 +48,18 @@
             </a>
           </td>
           <td><%= resort.beginner_rating %>/5</td>
-          <td><%= resort.apres_ski_rating %>/5</td>
+          <td>
+            <% if resort.apres_ski_rating == 5 %>
+              <i class="icon-beer"> </i>
+              <i class="icon-beer"> </i>
+              <i class="icon-beer"> </i>
+            <% elsif resort.apres_ski_rating == 4 %>
+              <i class="icon-beer"> </i>
+              <i class="icon-beer"> </i>
+            <% else %>
+              <i class="icon-beer"> </i>
+            <% end %>
+          </td>
           <td><%= resort.off_piste_rating %></td>
           <td><%= resort.cost_of_pass%>€</td>
           <td><%= resort.altitude %>km</td>
