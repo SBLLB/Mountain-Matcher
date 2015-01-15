@@ -42,8 +42,8 @@
           <td><%= resort.size_of_ski_domain %> km<br>
             <a href="#" data-tool="<%= resort.resort_name %> pistes: <%= resort.easy_runs_km %>km Easy / <%= resort.medium_runs_km %>km Medium / <%= resort.hard_runs_km %>km Hard" class="tooltip">
               <section class='slope-difficulty-gauge'>
-                <section class="easy-runs" id="<%= resort.proportion_easy_runs.to_i %>-percent-easy-runs" style="width: <%= number_to_percentage(resort.proportion_easy_runs, precision: 0) %>"></section>
-                <section class="medium-runs" style="width: <%= number_to_percentage(resort.proportion_medium_runs, precision: 0) %>"></section>
+                <section class="easy-runs" id="<%= resort.proportion_of(resort.easy_runs_km).to_i %>-percent-easy-runs" style="width: <%= number_to_percentage(resort.proportion_of(resort.easy_runs_km), precision: 0) %>"></section>
+                <section class="medium-runs" id="<%= resort.proportion_of(resort.medium_runs_km).to_i %>-percent-medium-runs" style="width: <%= number_to_percentage(resort.proportion_of(resort.medium_runs_km), precision: 0) %>"></section>
               </section>
             </a>
           </td>
