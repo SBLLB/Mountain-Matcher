@@ -1,28 +1,32 @@
-== README
+## "Mountain-Matcher"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### This is a personal Ruby on Rails project I've embarked upon since completing the Makers Academy Course. 
 
-Things you may want to cover:
+###The Concept:
+Many websites exist for ski and board holidays, yet researching and choosing a resort to visit is *still* a laborious task. Most of the dates are outdated with poor styling and user interfaces. There's a wealth of information out there but it's hidden amongst  a labyrinth of links! 
 
-* Ruby version
+I aim to create a site holding information on European resorts in a simple and user-friendly, sexy format. 
 
-* System dependencies
+First deployment will be simple with a comparison table and individual resort pages. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+###Areas to develop:
++ Adding search/filter ability
++ Embedding cookies to enable affiliate referrals
++ Responsive design
++ Enable user rating for things such as Apres Ski rating... 
++ Enable resort suggestions based on groups 
++ Build online presence - twitter
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+###Aim of the project:
+Initially this project is to help develop my Ruby and RoR skills, a language and framework I love. i also want to learn more about UX and design, particularly responsive design.
+
+Ultimately though I'd like this to become the de facto ski-resort search site and eventually monetise through affiliate links to ski holiday providers. 
+
+###Technologies used and lessons learned:
++ PostgreSQL
++ JQuery
++ TableSorter Gem
++ Slugging URLS (i.e removing index reference)
++ CSS3 / HTML5
+
