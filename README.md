@@ -13,7 +13,7 @@ First deployment will be simple with a comparison table and individual resort pa
 + Adding search/filter ability
 + Embedding cookies to enable affiliate referrals
 + Responsive design
-+ Enable user rating for things such as Apres Ski rating... 
++ Enable user rating for things such as Apres Ski rating
 + Enable resort suggestions based on groups 
 + Build online presence - twitter
 
